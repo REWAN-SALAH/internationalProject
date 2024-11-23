@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #FFFFFF; /* White */
+    color: #192129; /* Dark Navy */
+}
+
+/* Header Styles */
+header {
+    background-color: #192129; /* Dark Navy */
+    color: #FFFFFF; /* White */
+    padding: 1em 0;
+}
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #192129; /* Dark Navy */
+}
+
+.brand p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF; /* White */
+}
+
+/* Navigation Bar */
+.nav-bar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #FFFFFF; /* White */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: #800020; /* Deep Maroon */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: linear-gradient(to right, #800020, #36454F); /* Maroon to Steel Blue */
+    color: #FFFFFF; /* White */
+    padding: 3em 1em;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #800020; /* Deep Maroon */
+    color: #FFFFFF; /* White */
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #C0C0C0; /* Silver */
+}
+
+/* Content Section */
+.content {
+    margin: 2em auto;
+    padding: 1.5em;
+    max-width: 800px;
+    background: #FFFFFF; /* White */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    color: #800020; /* Deep Maroon */
+    margin-bottom: 15px;
+}
+
+.content p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #36454F; /* Steel Blue */
+}
+
+/* Featured Image */
+.featured-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #192129; /* Dark Navy */
+    color: #FFFFFF; /* White */
+    margin-top: 20px;
+}
+/* Card Styles */
+.card-title {
+    color: #800020; /* Deep Maroon */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: #F9F9F9; /* Light Gray */
+    border-radius: 0 0 10px 10px;
+}
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9fd;
+}
+
+/* Accordion Custom Button */
+.accordion-button {
+    background-color: #d9edf7;
+    color: #31708f;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #bcdff1;
+}
+
+.accordion-button.collapsed {
+    background-color: #d9edf7;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+}
+
+/* Accordion Content Styling */
+.accordion-body {
+    background-color: #ffffff;
+    border: 1px solid #d9edf7;
+    padding: 20px;
+    color: #31708f;
+}
