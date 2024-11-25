@@ -40,11 +40,111 @@
             </div>
         </nav>
     </header>
-      You can write here 
+    <section class="hero">
+        <h1>Gender Inequality in Turkey</h1>
+        <p>Addressing the domestic violence and inequalities affecting millions of women in Turkey.</p>
+        <a href="action.html" class="btn">Get Involved</a>
+    </section>
+    <style>
+        
+        .section {
+          margin: 20px;
+          padding: 15px;
+          border: 2px solid #000080;
+          border-radius: 8px;
+          background-color: #f9f9f9;
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        select {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 10px;
+          border-radius: 4px;
+        }
+        iframe {
+          width: 100%;
+          height: 200px;
+          border: none;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- Section 1: Dropdown to view text blocks -->
+      <div class="section">
+        <h3>Read The Story</h3>
+        <select id="textSelect" onchange="showText()">
+          <option value="">Select Your Story</option>
+          <option value="text1" selected>Story One</option>
+          <option value="text2">Story Two</option>
+          <option value="text3">Story Three</option>
+        </select>
+        <p id="textDisplay"></p>
+      </div>
+    
+      <!-- Section 2: Dropdown to view video links -->
+      <div class="section">
+        <h3>Watch The Story</h3>
+        <select id="videoSelect" onchange="showVideo()">
+          <option value="">Select Your Video</option>
+          <option value="story1">Story One</option>
+          <option value="story2">Story Two</option>
+          <option value="story3">Story Three</option>
+        </select>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; width: 100%;">
+            <iframe id="videoDisplay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    
+      <!-- Section 3: Small block of text -->
+      <div class="section">
+        <h3>Summary</h3>
+        <p>The three stories explore the challenges women face in Turkey, including inadequate legal protection, rising domestic violence, and societal unrest. The first story details the failure of the legal system, where an attacker returns to harass his victim despite a restraining order. The second focuses on the societal pressures driving increased violence against women, fueled by limited rights and economic opportunities. The third follows protests demanding justice for murdered women and highlights the government's inaction despite rising homicide rates.</p>
+      </div>
+    
+      <script>
+        // Function to display text based on dropdown selection
+        function showText() {
+          const textSelect = document.getElementById("textSelect");
+          const textDisplay = document.getElementById("textDisplay");
+    
+          if (textSelect.value === "text1") {
+            textDisplay.textContent = "The first story we will look at discusses attempts made on several women's lives and how the legal system in turkey and their lack of action fails those victims potentially leading to more danger. The situation is explained in depth and mentions how only one day after the violent confrontation the attacker was already back on the streets and waiting at the front door step of his victim. This incident occurred after a restraining order was placed on the man, the victim exclaims what kind of restraining order is that! The situation only gained significant attention when the victims went to social media and the situation went viral. Only then was the attacker prosecuted and sentenced to prison. Even though a slight bout of justice was served there are worries that he will be up for parole AGAINST Turkey's sentencing guidelines.";
+          } else if (textSelect.value === "text2") {
+            textDisplay.textContent = "The second story we will look at covers the topic of change in Turkish society as domestic violence still increases. A statment made early on in the video mentions the lack of eduction and employment avalible to women, due to this the women have stod strong and asked for more rights and oppurtunites. Another quote early in the video is that violence has risen due to the demands women are making to become freee, that socioligist Inci Kerestecioglu says makes men scared and resort to violence. In this video several horrific statistics are listed such as increased murder rates, the percent change in domestic violence victims, and finally the poverty/employment percentages amongst women.";
+          } else if (textSelect.value === "text3") {
+            textDisplay.textContent = "The third and final story we will look at tackles the protests and demand for change that the society is asking for. The particular protest that this story follows was a double murder of two women and the suicide of a male suspect who had been under investigation for too long. The crowd took to the streets to demand the state to take responsibility for their lack of action, and many of the protesters blame their conservative president. Despite overall homicide figures falling according to the UN the results in Turkey were quite the oppisite and were on the rise.";
+          } else {
+            textDisplay.textContent = "";
+          }
+        }
+    
+        // Function to display video based on dropdown selection
+        function showVideo() {
+          const videoSelect = document.getElementById("videoSelect");
+          const videoDisplay = document.getElementById("videoDisplay");
+          const videoURLMap = {
+            story1: "https://www.youtube.com/embed/XvIInDqY9kY",
+            story2: "https://www.youtube.com/embed/oaVkV8gghZw", 
+            story3: "https://www.youtube.com/embed/MRF_X_RkcZU" 
+          };
+    
+          if (videoSelect.value && videoURLMap[videoSelect.value]) {
+            videoDisplay.style.display = "block";
+            videoDisplay.src = videoURLMap[videoSelect.value];
+          } else {
+            videoDisplay.style.display = "none";
+          }
+        }
+      </script>
 
       <footer>
         <p>&copy; 2024 Orange Team. All Rights Reserved.</p>
     </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
