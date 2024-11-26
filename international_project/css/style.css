@@ -114,6 +114,11 @@ header {
     margin-bottom: 15px;
 }
 
+.content h2 {
+    color: #800020; /*Deep Maroon */
+    margin-bottom: 15px;
+}
+
 .content p {
     margin-bottom: 15px;
     line-height: 1.8;
