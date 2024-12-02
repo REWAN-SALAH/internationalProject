@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+/* Aside Stlying */
+aside {
+    width: 19%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+  }
+
 /* Body and Background */
 body {
     font-family: Arial, sans-serif;
